@@ -1,9 +1,7 @@
 const express = require("express");
-// const path = require("path");
 const fs = require("fs");
 
 const app = express();
-// app.use(express.static("./static"));
 
 app.get("/", (req, res) => {
   const data = fs.readFileSync("./json/counter.json", "utf-8");
